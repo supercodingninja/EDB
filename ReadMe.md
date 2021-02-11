@@ -43,17 +43,17 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 
-<h5>
-    <span align="left">Video: Ideal Application Build 👇🏿</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h4>
+    <span align="left">Video: Ideal Application Build 👇🏿</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <span align="right">Video: This Application Demonstration 👇🏿</span>
-</h5>
+</h4>
 
 <p float="center">
     <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/IAB.png" alt="Application Demo." align="left" height="45%" width="45%"/></a>
     <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." align="right" height="45%" width="45%"/></a>
 </p>
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
 <h2 align="center">Installation</h2>
 
