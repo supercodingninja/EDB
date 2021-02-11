@@ -43,15 +43,13 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 
-Video: Ideal Application Build 👇🏿 |  Video: This Application Demonstration 👇🏿
-:-------------------------:|:-------------------------:
-[![IAB](public/Assets/Media/IAB.png)](https://youtu.be/msvdn95x9OM "IAB")  |  [![Application Demo](public/Assets/Media/socialPreview.jpeg)](TBD.. "Application Demo")
+<p float="center">
+    <h3 align="left">Video: Ideal Application Build 👇🏿</h3>
+    <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img align="left" src="public/Assets/Media/IAB.png" alt="Application Demo." height="40%" width="40%"/></a>
 
-<h3 align="left">Video: Ideal Application Build 👇🏿</h3>
-<a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img align="left" src="public/Assets/Media/IAB.png" alt="Application Demo." height="40%" width="40%"/></a>
-
-<h3 align="right">Video: This Application Demonstration 👇🏿</h3>
-<a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img align="right" src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." height="40%" width="40%"/></a>
+    <h3 align="right">Video: This Application Demonstration 👇🏿</h3>
+    <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img align="right" src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." height="40%" width="40%"/></a>
+</p>
 
 <br><br><br><br><br><br><br>
 
