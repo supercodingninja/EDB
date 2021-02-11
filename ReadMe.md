@@ -1,7 +1,7 @@
 # EDB
 
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg) ![Badge](https://img.shields.io/badge/GitHub-Arctic%20Code%20Vault%20Contributor-brightgreen) ![Badge](https://img.shields.io/badge/GitHub-Pro%20%20%20-orange)<a href="https://github.com/supercodingninja" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="discoverfrederickthomas" height="30" width="30" /></a><a href="https://linkedin.com/in/discoverfrederickthomas" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="discoverfrederickthomas" height="30" width="30" /></a><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLnxMwdxjTgTEN-xRODXLJ6sI5hgz1lFbu" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="# discoverfrederickthomas" height="30" width="30"/></a><a href="https://fb.com/supercodingninja" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="supercodingninja" height="30" width="30" /></a><a href="mailto:SuperCodingNinja@outlook.com" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/microsoftoutlook.svg" alt="supercodingninja" height="30" width="30" /></a>  
-#### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  An application that mySQL, Sequelize, Node.js and Handlebars to help you track and pack your essential gear.
+#### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
 
 ## Table of Contents
 * [Repository Description](#Repository-Description)
@@ -17,7 +17,7 @@
 
 # Repository Description
 ###### [Back to Table of Contents](#Table-of-Contents)
-EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names of burgers they would like to eat.)  Whenever a user submits a burger's name, this application will display the same burger on the left side of the page (waiting to be devoured 😋); then, each burger in this waiting area, will also have a `Devour it!` button: so each time a user clicks it, the burger will move to the right side of the page.  This application will store **every** burger in a database, whether devoured or not.
+EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names of burgers they would like to eat.)  Whenever a user submits a burger's name, this application will display the same burger on the left side of the page (waiting to be devoured 😋 ); then, each burger in this waiting area, will also have a `Devour it!` button: so each time a user clicks it, the burger will move to the right side of the page.  This application will store **every** burger in a database, whether devoured or not.
 
 ## Deployment
 ###### [Back to Table of Contents](#Table-of-Contents)
@@ -77,7 +77,7 @@ I hope this repository helps you along your development.  Stay on task, Get Ahea
 
 ## License
 ###### [Back to Table of Contents](#Table-of-Contents)
-![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg) [GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007](license/ReadMe_License.md)
+![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg) [View GPL v. 3](license/ReadMe_License.md)
 
 EDB. A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
 
