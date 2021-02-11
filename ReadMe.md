@@ -46,8 +46,8 @@ Video: Ideal Application Build 👇🏿 | Video: This Application Demonstration 
 :-------------------------:|:-------------------------:
 
 <p float="center">
-    <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/IAB.png" alt="Application Demo." height="40%" width="40%"/></a>
-    <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." height="40%" width="40%"/></a>
+    <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/IAB.png" alt="Application Demo." align="left" height="40%" width="40%"/></a>
+    <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." align="right" height="40%" width="40%"/></a>
 </p>
 
 <br><br><br><br><br><br><br>
