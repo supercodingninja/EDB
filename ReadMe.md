@@ -99,7 +99,7 @@ I hope this repository helps you along your development.  Stay on task, Get Ahea
 ###### [Back to Table of Contents](#Table-of-Contents)
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg) [View GPL v. 3](license/ReadMe_License.md)
 
-EDB. A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
+EDB. A burger logger application, using MySQL, Node, Express, Handlebars, and a homemade ORM (yum!).
 
 Copyright (C) 2021  Frederick Thomas, Super Coding Ninja™  All Rights Reserved.
 
