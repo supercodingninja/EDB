@@ -1,4 +1,4 @@
-<img align="center" src="public/Assets/Media/d7d.gif" alt="supercodingninja" height="30" width="30" />
+<img align="center" src="public/Assets/Media/d7d.gif" alt="supercodingninja"  width="100%" />
 
 <h1 align="center">EDB</h1>
 
