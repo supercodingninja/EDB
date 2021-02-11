@@ -3,6 +3,7 @@
 ![License Icon](https://img.shields.io/badge/license-GPL3.0-informational.svg) ![Badge](https://img.shields.io/badge/GitHub-Arctic%20Code%20Vault%20Contributor-brightgreen) ![Badge](https://img.shields.io/badge/GitHub-Pro%20%20%20-orange)<a href="https://github.com/supercodingninja" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="discoverfrederickthomas" height="30" width="30" /></a><a href="https://linkedin.com/in/discoverfrederickthomas" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="discoverfrederickthomas" height="30" width="30" /></a><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLnxMwdxjTgTEN-xRODXLJ6sI5hgz1lFbu" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="# discoverfrederickthomas" height="30" width="30"/></a><a href="https://fb.com/supercodingninja" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="supercodingninja" height="30" width="30" /></a><a href="mailto:SuperCodingNinja@outlook.com" target="blank"><img align="right" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/microsoftoutlook.svg" alt="supercodingninja" height="30" width="30" /></a>  
 #### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
 
+
 <h2 align=center>Table of Contents</h2>
 
 * [Repository Description](#Repository-Description)
@@ -16,10 +17,12 @@
 * [Point of Contact](#point-of-contact)
 * [License](#license)
 
+
 <h2 align=center>Repository Description</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names of burgers they would like to eat.)  Whenever a user submits a burger's name, this application will display the same burger on the left side of the page (waiting to be devoured 😋 ); then, each burger in this waiting area, will also have a `Devour it!` button: so each time a user clicks it, the burger will move to the right side of the page.  This application will store **every** burger in a database, whether devoured or not.
+
 
 <h2 align=center>Deployment</h2>
 
@@ -36,6 +39,7 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 ### Video: This Application Demonstration 👇🏿
 <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img align="center" src="PUT IMAGE HERE" alt="Application Demo." width="100%"/></a>
 
+
 <h2 align=center>Installation</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
@@ -46,20 +50,24 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 5.  Run "npm start."
 6.  Click on localHost, and view in browser.
 
+
 <h2 align=center>Usage Information</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 This repository can be used for projects, non-profit organizations, academic clubs; and much more!  Not for commercial use, unless granted by the author.
+
 
 <h2 align=center>Testing</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 TBD...
 
+
 <h2 align=center>Contributions and Guidelines</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
-I hope you enjoy this repository, and the application's link, given above and below (I love developing new projects).  Please feel free to fork and even collaborate with me on this awesome repository!  Thank you for viewing! - Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja
+I hope you enjoy this repository, and the application's link, given above and below (I love developing new projects).  Please feel free to fork and even collaborate with me on this awesome repository!  Thank you for viewing! - Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja)
+
 
 <h2 align=center>References</h2>
 
@@ -79,10 +87,12 @@ This is a book about JavaScript, programming, and digital wonders. Read it onlin
 
 7.  [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.  
 
+
 <h2 align=center>Point of Contact</h2>
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 I hope this repository helps you along your development.  Stay on task, Get Ahead, Change The World! - [Frederick Thomas](https://www.linkedin.com/in/discoverfrederickthomas/), Super Coding Ninja™
+
 
 <h2 align=center>License</h2>
 
