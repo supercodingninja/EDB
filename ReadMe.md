@@ -23,10 +23,10 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 ###### [Back to Table of Contents](#Table-of-Contents)
 [Deployed Application](TBD...) and source code can be viewed in this [GitHub Repository](https://github.com/supercodingninja/EDB)
 
-## Demostration and Build
+## Video Demostrations and Build
 ###### [Back to Table of Contents](#Table-of-Contents)
 ### Video: Ideal Application Build 👇🏿
-<a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img align="center" src="public/Assets/Media/IAB.png" alt="Application Demo." width="100%"/></a>
+<a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img align="center" src="public/Assets/Media/IAB.png" alt="Application Demo." append=100x20/></a>
 
 &nbsp;
 
@@ -52,7 +52,7 @@ TBD...
 
 ## Contributions and Guidelines
 ###### [Back to Table of Contents](#Table-of-Contents)
-I hope you enjoy this repository, and the application's link, given above and below (I love developing new projects).  Please feel free to fork and even collaborate with me on this awesome repository!  Thank you for viewing! - Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja)./github.com/merikettapearl212)
+I hope you enjoy this repository, and the application's link, given above and below (I love developing new projects).  Please feel free to fork and even collaborate with me on this awesome repository!  Thank you for viewing! - Frederick Thomas, [Super Coding Ninja™](https://github.com/supercodingninja
 
 ## References
 ###### [Back to Table of Contents](#Table-of-Contents)
