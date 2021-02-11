@@ -43,14 +43,10 @@ EDB (Eat-Da-Burger!) is a restaurant app,  which allows users to input the names
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 
-<p float="left">
-    <h3 align="left">Video: Ideal Application Build 👇🏿</h3>
-    <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img align="left" src="public/Assets/Media/IAB.png" alt="Application Demo." height="40%" width="40%"/></a>
-</p>
+<p float="center">
+    <a href="https://youtu.be/msvdn95x9OM" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/IAB.png" alt="Application Demo." height="40%" width="40%"/>Video: Ideal Application Build 👇🏿</a>
 
-<p float="right">
-    <h3 align="right">Video: This Application Demonstration 👇🏿</h3>
-        <a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img align="right" src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." height="40%" width="40%"/></a>
+<a href="TBD" alt="Application Demo." title="Demo" target="_blank"><img src="public/Assets/Media/socialPreview.jpeg" alt="Application Demo." height="40%" width="40%"/>Video: This Application Demonstration 👇🏿</a>
 </p>
 
 <br><br><br><br><br><br><br>
