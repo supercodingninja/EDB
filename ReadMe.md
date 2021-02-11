@@ -116,7 +116,7 @@ I hope this repository helps you along your development.  Stay on task, Get Ahea
 
 ###### [Back to Table of Contents](#Table-of-Contents)
 
-<a href="license/ReadMe_License.md" alt="Application Demo." title="GPL3.0 Information" target="_blank"><img align="center" src="https://img.shields.io/badge/License-view GPL3.0-informational.svg" alt="GPL3.0 Information" height="30" width="30"/></a>
+<a href="license/ReadMe_License.md" alt="Application Demo." title="GPL3.0 Information" target="_blank"><img align="center" src="https://img.shields.io/badge/License-Click to View GPL3.0-informational.svg" alt="GPL3.0 Information" height="auto" width="auto"/></a>
 
 EDB. A burger logger application, using MySQL, Node, Express, Handlebars, and a homemade ORM (yum!).
 
