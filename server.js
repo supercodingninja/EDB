@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
 const Port = process.env.Port || 9001;
+const app = express();
 
 // Configured packages installed
 app.use(bodyParser.urlencoded({extended:false}));
