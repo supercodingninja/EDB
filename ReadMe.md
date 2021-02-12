@@ -8,6 +8,7 @@
   
 #### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
 
+
 <h2 align="center">Table of Contents</h2>
 
 * [Repository Description](#Repository-Description)
