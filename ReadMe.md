@@ -6,9 +6,8 @@
 <img align="center" src="public/Assets/Media/funnyBurger.gif" alt="supercodingninja"  height="50%" width="100%" />
 <!-- .gif can be found at https://knowyourmeme.com/photos/535449-daym-drops -->
   
-#### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM (yum!).
+#### EDB© 2021 All Rights Reserved.  GPL3.0 All material must be cited or credited, when using material (free to use).  A burger logger application, using MySQL, Node, Express, Handlebars and a homemade ORM 😋
 
-<br>
 
 <h2 align="center">Table of Contents</h2>
 
