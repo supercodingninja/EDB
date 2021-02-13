@@ -15,7 +15,10 @@ app.use(methodOverride("_method"));
 
 // Configured Express Handlebars. //
 app.engine("handlebars", exphbs({defaultLayout:"main"}));
-app.set("view engine", "handlebars");
+app.set("view engine", "handlebars");       
+
+// Configured Routes. //
+app.use("/", routes);
 
 // Configured Server. //
 app.listen(Port, () => {
