@@ -1,0 +1,17 @@
+<div class="getBurger" id={{id}}>
+    <img src="" alt="">
+    
+    <p>{{Burger_name}}</p>
+    
+    <button class="btn btn-default favorites" data-id="{{id}}" data-state="{{is_favorite}}">
+        {{#if is_favorite}}
+            
+            YUCK!
+            
+            {{else}}
+                
+                Da Favs!
+                
+        {{/if}}
+    </button>
+</div>

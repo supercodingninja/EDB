@@ -42,7 +42,7 @@ form button {
     overflow: auto;
     margin-top: 10em;
 }
-.BT .Burgers__list {
+.BT .getBurger {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,11 +53,11 @@ form button {
     margin-top: 20px;
 }
 
-.BT .Burgers__list img {
+.BT .getBurger img {
     height: 70px;
     border-radius: 4px;
 }
 
-.BT .Burgers__list p {
+.BT .getBurger p {
     font-size: 24px;
 }
