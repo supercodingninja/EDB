@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const orm =require('../config/orm');
+const orm =require('../config/orm.js');
 
 // Get //
 router.get("/", function(req, res) {
@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
         }
         console.log('Burgers: ', EDB);
 
-        res.render("index", {{Burgers}});
+        res.render("index", {Burgers});
     });
 });
 

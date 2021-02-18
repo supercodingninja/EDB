@@ -104,8 +104,6 @@ This is a book about JavaScript, programming, and digital wonders. Read it onlin
 
 7.  [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
 
-8.  [Video Tutorial](https://www.youtube.com/watch?v=eyKgivrIDpI&list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf&t=312s&index=15) Here is a video tutorial, whose approach I decided to use as a guideline.  I do not agree, nor endorse all statements; but this is an in depth guide; which I hope may help.  I took a little different approach towards the end.
-
 <br>
 
 <h2 align="center">Point of Contact</h2>
