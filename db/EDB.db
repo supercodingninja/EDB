@@ -1,3 +1,5 @@
+CREATE DATABASE EDB_db;
+
 USE EDB_db;
 
 CREATE TABLE BigTimeEst_Burgers(
