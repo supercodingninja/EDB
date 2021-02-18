@@ -5,15 +5,15 @@ const orm =require('../config/orm');
 
 // Get //
 router.get("/", function(req, res) {
-    orm.selectAll (function(error, burgers) {
+    orm.selectAll (function(error, EDB) {
         if (error) {
             return res.status(501).json ({
                 message: 'Unable to query the database.'
             });
         }
-        console.log('Burgers: ', burgers);
+        console.log('Burgers: ', EDB);
 
-        res.render("index");
+        res.render("index", {{Burgers}});
     });
 });
 
