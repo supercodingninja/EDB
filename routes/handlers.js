@@ -11,6 +11,8 @@ router.get("/", function(req, res) {
                 message: 'Unable to query the database.'
             });
         }
+        console.log('Burgers: ', burgers);
+
         res.render("index");
     });
 });
