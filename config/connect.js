@@ -9,8 +9,8 @@ if(process.env.JAWSDB_URL) {
     user: 'root',
     password: 'Tacoma21!',
     database: 'EDB_db'
-});
-
+    });
+};
 connection.connect();
 
 module.exports = connection;

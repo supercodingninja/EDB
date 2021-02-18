@@ -22,5 +22,5 @@ app.use("/", routes);
 
 // Configured Server. //
 app.listen(PORT, () => {
-    console.log(`My Seerver should be starting at PORT ${PORT}`);
+    console.log(`My Server should be starting at PORT ${PORT}`);
 });
