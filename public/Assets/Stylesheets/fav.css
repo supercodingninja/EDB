@@ -1,0 +1,33 @@
+.DaFavs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.myFavB {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.myFavB .Burgers__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #440b28;
+    padding: 10px;
+    height: 100px;
+    width: 500px;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.myFavB .Burgers__list img {
+    height: 70px;
+    border-radius: 4px;
+}
+
+.myFavB .Burgers__list p {
+    font-size: 24px;
+}

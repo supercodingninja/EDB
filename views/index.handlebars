@@ -1,7 +1,13 @@
-<h2>Welcome To Big Time</h2>
+{{ header }}
 
-{{#each Burgers}}
-    <p>{{Burger_name}}</p>
-    <p>{{id:}}</p>
-    <p>{{is_favorite}}</p>
-{{/each}}
+<div class="BT">
+    <h1>Welcome To Big Time</h1>
+
+    {{ addBurger }}
+    
+    <div class="Burgers">
+        {{#each result}}
+            {{ displayBurger }}
+        {{/each}}
+    </div>
+</div>

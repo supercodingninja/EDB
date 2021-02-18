@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.BT {
+    margin-top: 4em;
+    overflow: auto;
+    height: 1000px;
+}
+
+form {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 500px;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+form .form-group {
+    width: 100%;
+}
+
+form button {
+    width: 100px;
+}
+
+.BT .Burgers {
+    width: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 10em;
+}
+.BT .Burgers__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5b9ac;
+    padding: 10px;
+    height: 90px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.BT .Burgers__list img {
+    height: 70px;
+    border-radius: 4px;
+}
+
+.BT .Burgers__list p {
+    font-size: 24px;
+}

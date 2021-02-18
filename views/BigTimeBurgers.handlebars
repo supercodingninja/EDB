@@ -1,0 +1,37 @@
+{{ header }}
+
+<div class="btb">
+    <div class="favs-section">
+        <h2>Da Favs</h2>
+        {{#each result}}
+            {{#if is_favorite}}
+                <div class="Burger" data-id="{{id}}">
+                    <img src="public/Assets/Media/DaFavs.pngDaFavs.png" alt="Give Me Da Burger!">
+                    
+                    <p>{{Burger_name}}</p>
+                    
+                    <button class="btn btn-default" data-id="{{id}}">Delete Burger</button>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+
+    <div class="yuck-section">
+        <h2>NASTY Burgers</h2>
+        {{#each result}}
+        
+            {{#unless is_favorite}}
+                <div class="Burger" data-id="{{id}}">
+                    <img src="public/Assets/Media/NASTY.jpg" alt="YUCK!">
+                    
+                    <p>{{Burger_name}}</p>
+                    
+                    <button class="btn btn-default" data-id="{{id}}">
+                        Delete Burger
+                    </button>
+                </div>
+            {{/unless}}
+        {{/each}}
+    </div>
+</div>
