@@ -86,3 +86,8 @@ const addFav = (Burger) => {
     const id = Burger.id;
     $(`#${id}`).remove();
 };
+
+// What if these buttons do not work? //
+const addFail = () => {
+    alert('Fail to add Fav');
+};
