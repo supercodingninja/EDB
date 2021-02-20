@@ -32,3 +32,19 @@ const burgerTemplate = (burgerName, id, is_favorite) => {
     
     return burgerContainer;
 };
+
+// Getting new burgers to appear. //
+const getNewBurger = (Burger) => {
+    
+    const freshBurger = burgerTemplate(name, id, is_favorite);
+    
+    const name = Burger.Burger_name;
+    
+    const id = Burger.id;
+    
+    const is_favorite = Burger.is_favorite;
+    
+    $('.getBurger').prepend(freshBurger);
+    
+    $('input').val('');
+};
