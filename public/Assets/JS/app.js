@@ -115,11 +115,11 @@ $(document).on('click', '.favorites', function() {
         
         url: `/${id}/${!condition}`, //I'm not sure if I'm understanding/typing this approach `/${id}/${!condition}` correctly.  TEST THIS, and review tutorial appraoch for this particular method.  It would be nice to get this concept down, for other developments.  It's probably best to stick to original approach:
 
-        // $.ajax("/api/burgers/" + id, {
+        // $.ajax("/api/burger/" + id, {
         //     type: "PUT",
-        //     data: burgerData
+        //     data: burgerData (MAYBE)
         // }).then(function() {
-        //     console.log("Burger devoured!");
+        //     console.log("Bye-bye, Burger!");
         //     location.reload();
         // }); //
         
