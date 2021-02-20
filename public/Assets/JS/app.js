@@ -80,3 +80,9 @@ $('button[type=submit]').on('click', function(event) {
     
     .catch(noBurger);
 });
+
+// "DaFavs!" or "Yuck!" //
+const addFav = (Burger) => {
+    const id = Burger.id;
+    $(`#${id}`).remove();
+};
