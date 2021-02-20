@@ -48,3 +48,10 @@ const getNewBurger = (Burger) => {
     
     $('input').val('');
 };
+
+// What happens if a burger does't load? //
+const noBurger = (response) => {
+    
+    alert('No money,no burger.  Please wash your hands by refreshing your page.');
+
+};
