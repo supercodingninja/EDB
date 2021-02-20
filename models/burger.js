@@ -47,7 +47,7 @@ let anyBurger = {
     // DON'T FORGET THE RATINGS!!! //
     updateRating: function (ratingNum, burgerID, cb) {
         
-        orm.updateOne('Ratings', ratingInt, cb, 'Burgers', "id", burgerID, function(res){ // Not sure how I will rate the burgers; i. e. "+A, A...F, F-"; or is best to rate by numbers, "1...10," worst to Best; or best to worst...perhaps I will have to stick to the 5-Stars rating; but I need to decide how I will render these stars to display/disappear...or probably have five stars as emptied shells (unhighlighted images), where the user can select their choice...
+        orm.updateOne('Ratings', ratingInt, cb, 'Burgers', 'id', burgerID, function (res) { // Not sure how I will rate the burgers; i. e. "+A, A...F, F-"; or is best to rate by numbers, "1...10," worst to Best; or best to worst...perhaps I will have to stick to the 5-Stars rating; but I need to decide how I will render these stars to display/disappear...or probably have five stars as emptied shells (unhighlighted images), where the user can select their choice...
 
             cb(res);
 
