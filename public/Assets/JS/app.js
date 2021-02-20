@@ -33,6 +33,7 @@ const burgerTemplate = (burgerName, id, is_favorite) => {
     return burgerContainer;
 };
 
+
 // Getting new burgers to appear. //
 const getNewBurger = (Burger) => {
     
@@ -49,6 +50,7 @@ const getNewBurger = (Burger) => {
     $('input').val('');
 };
 
+
 // What happens if a burger does't load? //
 const noBurger = (res) => {
     
@@ -56,8 +58,9 @@ const noBurger = (res) => {
 
 };
 
+
 // User's Burger submission (the submit button). //
-$('button[type=submit]').on('click', function(event) {
+$('#submitBurger').on('click', function(event) {
     
     e.preventDefault(); // Keeps the page from refreshing. //
     
@@ -81,13 +84,80 @@ $('button[type=submit]').on('click', function(event) {
     .catch(noBurger);
 });
 
+
 // "DaFavs!" or "Yuck!" //
 const addFav = (Burger) => {
+    
     const id = Burger.id;
+    
     $(`#${id}`).remove();
+
 };
+
 
 // What if these buttons do not work? //
 const addFail = () => {
-    alert('Fail to add Fav');
+   
+    alert('Fail to add Fav.');
+
 };
+
+
+$(document).on('click', '.favorites', function() {
+    
+    const id = $(this).attr('data-id');
+    
+    const value = $(this).attr('data-state');
+
+    let condition = value === '0' ? false : true;
+
+    $.ajax({
+        
+        url: `/${id}/${!condition}`, //I'm not sure if I'm understanding/typing this approach `/${id}/${!condition}` correctly.  TEST THIS, and review tutorial appraoch for this particular method.  It would be nice to get this concept down, for other developments.  It's probably best to stick to original approach:
+
+        // $.ajax("/api/burgers/" + id, {
+        //     type: "PUT",
+        //     data: burgerData
+        // }).then(function() {
+        //     console.log("Burger devoured!");
+        //     location.reload();
+        // }); //
+        
+        method: 'PUT'
+    
+    })
+    .then(addFav)
+    
+    .catch(addFail);
+});
+
+
+// Ref. public/Assets/Stylesheets/btb.css; and /Users/supercodingninja/GitHub/EDB/views/BigTimeBurgers.handlebars //
+const removeBurger = (burger) => {
+    
+    const id = burger.id;
+
+    $(`.btb .Burger[data-id=${id}]`).remove();
+};
+
+
+const removeFailed = () => {
+    
+    alert('Fail to delete burger.');
+};
+
+$('.btb .Burger button').on('click', function() {
+    
+    const id = $(this).attr('data-id');
+
+
+    $.ajax({
+        
+        url: `/delete/${id}`, // I really want to get this `/delete/${id}` down. //
+        
+        method: 'DELETE'
+    })
+    .then(removeBurger)
+    
+    .catch(removeFailed);
+});
