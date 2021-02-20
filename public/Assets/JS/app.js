@@ -50,8 +50,33 @@ const getNewBurger = (Burger) => {
 };
 
 // What happens if a burger does't load? //
-const noBurger = (response) => {
+const noBurger = (res) => {
     
-    alert('No money,no burger.  Please wash your hands by refreshing your page.');
+    alert('No money,no burger!  Please wash your hands by refreshing your page.');
 
 };
+
+// User's Burger submission (the submit button). //
+$('button[type=submit]').on('click', function(event) {
+    
+    e.preventDefault(); // Keeps the page from refreshing. //
+    
+    const burgerName = $('input[name="Burger_name"]').val();
+
+    $.ajax({
+        
+        url: '/api/models/burger.js',
+        
+        method: 'POST',
+        
+        data: {
+            
+            Burger_name: burgerName
+        
+        }
+    })
+    
+    .then(getNewBurger)
+    
+    .catch(noBurger);
+});
