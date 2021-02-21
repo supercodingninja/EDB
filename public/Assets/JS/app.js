@@ -1,5 +1,55 @@
 // IMPORTANT NOTE TO SELF: Go back to COMMITTING IMMEDIATELY after each function: so you do not lose your work, by accidental deletes, computer issues, etc.!  YOU'RE NEW TO THIS; and it's OKAY- who cares if more experience developers do not overly commit- YOU HAVE TO DO WHAT WORKS BEST FOR YOU; SO DO IT, AND DO IT GREAT!!! //
 
+// Ratings //
+function ratings() {
+
+    $.ajax('/api/models/burger.js', {
+        
+        method: 'GET',
+    })
+    
+    .then(function (data) {
+        
+        for (var i = 0; i < data.length; i++) {
+            
+            ratings(data[i].id, data[i].rating);
+        }
+    });
+};
+
+
+// How do I update my ratings? //
+ $('.fa-star').on('click', function (event) {
+    
+    e.preventDefault();
+    
+    let ratingInt = $(this).data('rating');
+    
+    let id = $(this).parent().data('burgerID'); // I do not know what I should put here. //
+
+    let burgerData = {
+        
+        rating: ratingInt
+    };
+
+    // render stars
+    ratings(id, ratingInt);
+
+    // DON'T FORGET THE DATABASE!!! //
+    $.ajax('/api/models/burger.js' + id, {
+        
+        data: burgerData,
+        
+        method: 'PUT'
+    })
+    
+    .then(function () {
+        
+        location.reload(); 
+    });
+});
+
+
 // Ref. views/specifics/getBurger.handlebars //
 const burgerTemplate = (burgerName, id, is_favorite) => {
     
@@ -54,13 +104,15 @@ const getNewBurger = (Burger) => {
 // What happens if a burger does't load? //
 const noBurger = (res) => {
     
-    alert('No money,no burger!  Please wash your hands by refreshing your page.');
+    alert('No money, no burger!  Please wash your hands by refreshing your page.');
 
 };
 
 
 // User's Burger submission (the submit button). //
 $('#submitBurger').on('click', function(event) {
+
+    ratings();
     
     e.preventDefault(); // Keeps the page from refreshing. //
     
@@ -68,7 +120,7 @@ $('#submitBurger').on('click', function(event) {
 
     $.ajax({
         
-        url: '/api/models/burger.js',
+        url: '/api/models/burger.js' + id,
         
         method: 'POST',
         
@@ -111,21 +163,21 @@ $(document).on('click', '.favorites', function() {
 
     let condition = value === '0' ? false : true;
 
-    $.ajax({
+    $.ajax('/api/models/burger.js', {
         
-        url: `/${id}/${!condition}`, //I'm not sure if I'm understanding/typing this approach `/${id}/${!condition}` correctly.  TEST THIS, and review tutorial appraoch for this particular method.  It would be nice to get this concept down, for other developments.  It's probably best to stick to original approach:
-
-        // $.ajax("/api/burger/" + id, {
-        //     type: "PUT",
-        //     data: burgerData (MAYBE)
-        // }).then(function() {
-        //     console.log("Bye-bye, Burger!");
-        //     location.reload();
-        // }); //
+        method: 'PUT',
         
-        method: 'PUT'
+        data: burgerData
+    })
+    
+    .then(function() {
+            
+        console.log('Bye-bye, Burger!');
+            
+        location.reload();
     
     })
+
     .then(addFav)
     
     .catch(addFail);
@@ -153,10 +205,11 @@ $('.btb .Burger button').on('click', function() {
 
     $.ajax({
         
-        url: `/delete/${id}`, // I really want to get this `/delete/${id}` down. //
+        url: '/api/models/burger.js', // I really want to get something like this `/delete/${id}` down. //
         
         method: 'DELETE'
     })
+
     .then(removeBurger)
     
     .catch(removeFailed);

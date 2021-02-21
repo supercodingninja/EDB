@@ -31,3 +31,14 @@
 .myFavB .getBurger p {
     font-size: 24px;
 }
+
+/* Ratings */
+.fa-star {
+    color: rgb(228, 216, 216);
+    border: none;
+    padding: none;
+}
+
+.fa-star:hover {
+    color: gold;
+}

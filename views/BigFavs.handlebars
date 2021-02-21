@@ -5,6 +5,15 @@
    <div class="myFavB">
         {{#each result}}
             {{ getBurger }}
+
+            {{!-- This is suppose to be the Burger's Rating Scale (need help). --}}
+            <div class="col stars-rating" data-burgerID="{{id}}">
+                <i class="fa fa-star burger{{id}}" data-rating="1"></i>
+                <i class="fa fa-star burger{{id}}" data-rating="2"></i>
+                <i class="fa fa-star burger{{id}}" data-rating="3"></i>
+                <i class="fa fa-star burger{{id}}" data-rating="4"></i>
+                <i class="fa fa-star burger{{id}}" data-rating="5"></i>
+            </div>
         {{/each}} 
    </div>
 </div>

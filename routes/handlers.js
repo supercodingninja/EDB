@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
         }
         console.log('Burgers: ', EDB);
 
-        res.render("index", {Burgers});
+        res.render("index", {Burgers, style: 'index'});
     });
 });
 

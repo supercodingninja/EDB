@@ -27,7 +27,7 @@ const orm = {
     // insertOne() method. //
     insertOne: function (burgerName, cb) {
     
-        const sqlQuery = `INSERT INTO BigTimeEst_Burgers(burger_name) VALUES('${burgerName}')`;
+        const sqlQuery = `INSERT INTO BigTimeEst_Burgers(Burger_name) VALUES('${burgerName}')`;
     
         connection.query(sqlQuery, function (err, data) {
     

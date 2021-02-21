@@ -3,11 +3,11 @@
 <div class="BT">
     <h1>Welcome To Big Time</h1>
 
-    {{ addBurger }}
+    {{> addBurger }}
     
     <div class="Burgers">
         {{#each result}}
-            {{ getBurger }}
+            {{> getBurger }}
         {{/each}}
     </div>
 </div>
