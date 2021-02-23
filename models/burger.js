@@ -5,11 +5,11 @@ const orm = require('../config/orm');
 
 let anyBurger = {
 
-    selectall: function (cb) {
+    selectAll: function (cb) {
         
-        orm.selectAll('Burgers', function (res) {
+        orm.selectAll('BigTimeEst_Burgers', function (data) {
             
-            cb (res);
+            cb (data);
 
         });
     },

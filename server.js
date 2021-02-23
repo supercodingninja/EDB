@@ -3,7 +3,7 @@ const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
-const routes = require("./routes/handlers")
+const routes = require("./controllers/handlers")
 
 const PORT = process.env.PORT || 8080;
 const app = express();

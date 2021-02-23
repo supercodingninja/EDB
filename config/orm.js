@@ -1,13 +1,13 @@
 const connection = require("./connect");
 
 const orm = {
-    selectAll: function (cb) {
+    selectAll: function (table, cb) {
         
-        connection.query("SELECT * FROM BigTimeEst_Burgers", function (err, data) {
+        connection.query("SELECT * FROM "+table, function (err, data) {
             
-            if (err) cb(err, null);
+          
             
-            cb(null, data);
+            cb(data);
         });
     },
 

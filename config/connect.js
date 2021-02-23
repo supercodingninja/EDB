@@ -1,4 +1,4 @@
-const mySQL = require('mysql');
+const mysql = require('mysql');
 
 // STOP FORGETTING THIS!!! //
 require('dotenv').config();
@@ -14,17 +14,20 @@ if(process.env.JAWSDB_URL) {
     connection = mysql.createConnection({
     
         host: 'localhost',
+        
+        port: 3306,
     
-        user: 'root',
+        user:  process.env.DB_USERNAME,
     
-        password: 'Tacoma21!',
+        password: process.env.DB_PASS,
     
         database: 'EDB_db',
-
-        port: process.env.db_port
     });
 };
 
-connection.connect();
+connection.connect(function(err){
+    if(err) throw err;
+    console.log("connections id", connection.threadId)
+});
 
 module.exports = connection;
