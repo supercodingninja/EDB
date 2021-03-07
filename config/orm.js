@@ -1,5 +1,7 @@
-const connection = require("./connect");
+// Import MySQL connection. //
+const connection = require("./connect.js");
 
+// Object for all our SQL statement functions. //
 const orm = {
     selectAll: function (table, cb) {
         
