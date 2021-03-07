@@ -1,3 +1,4 @@
+// Sets MySQL connection. //
 const mysql = require('mysql');
 
 // STOP FORGETTING THIS!!! //
@@ -25,6 +26,8 @@ if(process.env.JAWSDB_URL) {
     });
 };
 
+
+// Make connection. //
 connection.connect(function(err){
     if(err) throw err;
     console.log("connections id", connection.threadId)
