@@ -1,7 +1,7 @@
 // Don't forget to require the ORM. //
 const { deleteOne } = require('../config/orm');
 
-const orm = require('../config/orm');
+const orm = require('../config/orm.js');
 
 let anyBurger = {
 

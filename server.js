@@ -1,26 +1,27 @@
 const express = require("express");
-const methodOverride = require("method-override");
-const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
-
 const routes = require("./controllers/handlers")
-
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8085;
 const app = express();
 
-// Configured Packages Installed. //
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
-app.use(methodOverride("_method"));
+
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("public"));
+
+
+// Configured Packages Installed.  Parse application body //
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
 
 // Configured Express Handlebars. //
 app.engine("handlebars", exphbs({defaultLayout:"main"}));
 app.set("view engine", "handlebars");       
 
-// Configured Routes. //
-app.use("/", routes);
+// Configured Routes.  Import routes and give the server access to them. //
+app.use(routes);
 
-// Configured Server. //
+// Configured Server.  Start our server so that it can begin listening to client requests. //
 app.listen(PORT, () => {
     console.log(`My Server should be starting at PORT ${PORT}`);
 });
