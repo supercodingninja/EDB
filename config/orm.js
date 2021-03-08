@@ -27,16 +27,18 @@ const orm = {
     },
     
     // insertOne() method. //
-    insertOne: function (burgerName, cb) {
+    insertOne: function (table, body, cb) {
     
-        const sqlQuery = `INSERT INTO BigTimeEst_Burgers(Burger_name) VALUES('${burgerName}')`;
+        const sqlQuery = `INSERT INTO ?? SET ? `;
+  
+    const statement=    connection.query(sqlQuery,[table, body], function (err, data) {
     
-        connection.query(sqlQuery, function (err, data) {
+            if (err) throw err,
     
-            if (err) cb(err, null);
-    
-            cb(null, data);
+            cb(data);
         });
+
+        console.log(statement.sql)
     },
     
     // updateOne() method. //

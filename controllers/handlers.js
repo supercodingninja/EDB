@@ -1,12 +1,11 @@
-const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
 
 // Import the model (burger.js) to use its database functions. //
 const burger =require('../models/burger');
 
 
 // Routes, and set up logic within those routes, where required. //
-// Get (C. R. U. D.: CREATE) //
+// Get (C. R. U. D.: READ) //
 router.get("/", function(req, res) {
     burger.selectAll (function(data) {
        
@@ -22,22 +21,27 @@ router.get("/", function(req, res) {
 });
 
 
-// Post (C. R. U. D.: READ) //
+router.get("/api/burgers",function(req, res) {
+    burger.selectAll (function(data) {
+       
+        var hbsObject = {
+
+            burgers: data
+        };
+
+        console.log(hbsObject);
+
+        res.json(data);
+    });
+});
+
+
+// Post (C. R. U. D.: CREATE) //
 router.post("/api/burgers", function(req, res) {
     
-    burger.create(
+    burger.insertOne(
         
-        [
-            "name",
-            
-            "favorite"
-        ], 
-
-        [
-            req.body.name,
-            
-            req.body.favorite
-        ],
+         req.body,
         
         function(result) {
       

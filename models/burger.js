@@ -15,9 +15,9 @@ let anyBurger = {
     },
     
     // This is how to get user's burger into a burger table.  Ref. https://docs.mongodb.com/drivers/node/usage-examples/insertOne/ "nsertOne() returns nothing. If you not specify one, this method returns a Promise that resolves to the result object when it completes." //
-    insertOne: function (burgerName, cb) {
+    insertOne: function (body, cb) {
         
-        onm.insertOne ('Burgers', Burger_name, burgerName, cb, function (res) {
+        orm.insertOne ('BigTimeEst_Burgers', body,  function (res) {
             
             cb(res);
 

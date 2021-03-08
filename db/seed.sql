@@ -1,4 +1,4 @@
-USE BigTimeEst_Burgers_db;
+USE EDB_db;
 
 INSERT INTO BigTimeEst_Burgers (Burger_name) VALUES ("Colosus Burger"), ("MEGA-FAT Burger"), ("4-D-Hommies Burger");
 

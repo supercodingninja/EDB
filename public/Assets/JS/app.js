@@ -3,7 +3,7 @@
 // Ratings //
 function ratings() {
 
-    $.ajax('/api/models/burger.js', {
+    $.ajax('/api/burgers', {
         
         method: 'GET',
     })
@@ -36,7 +36,7 @@ function ratings() {
     ratings(id, ratingInt);
 
     // DON'T FORGET THE DATABASE!!! //
-    $.ajax('/api/models/burger.js' + id, {
+    $.ajax('/api/burgers/' + id, {
         
         data: burgerData,
         
@@ -87,17 +87,7 @@ const burgerTemplate = (burgerName, id, is_favorite) => {
 // Getting new burgers to appear. //
 const getNewBurger = (Burger) => {
     
-    const freshBurger = burgerTemplate(name, id, is_favorite);
-    
-    const name = Burger.Burger_name;
-    
-    const id = Burger.id;
-    
-    const is_favorite = Burger.is_favorite;
-    
-    $('.getBurger').prepend(freshBurger);
-    
-    $('input').val('');
+    location.reload()
 };
 
 
@@ -111,22 +101,25 @@ const noBurger = (res) => {
 
 // User's Burger submission (the submit button). //
 $('#submitBurger').on('click', function(event) {
-
+    alert("click me")
     ratings();
     
-    e.preventDefault(); // Keeps the page from refreshing. //
+    event.preventDefault(); // Keeps the page from refreshing. //
     
-    const burgerName = $('input[name="Burger_name"]').val();
+    const burgerName = $('#Burger_name').val();
 
     $.ajax({
         
-        url: '/api/models/burger.js' + id,
+        url: '/api/burgers',
         
         method: 'POST',
         
         data: {
             
-            Burger_name: burgerName
+            Burger_name: burgerName,
+
+
+            is_favorite: 0
         
         }
     })
@@ -163,7 +156,7 @@ $(document).on('click', '.favorites', function() {
 
     let condition = value === '0' ? false : true;
 
-    $.ajax('/api/models/burger.js', {
+    $.ajax('/api/burgers', {
         
         method: 'PUT',
         
@@ -205,7 +198,7 @@ $('.btb .Burger button').on('click', function() {
 
     $.ajax({
         
-        url: '/api/models/burger.js', // I really want to get something like this `/delete/${id}` down. //
+        url: '/api/burgers', // I really want to get something like this `/delete/${id}` down. //
         
         method: 'DELETE'
     })
