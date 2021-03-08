@@ -47,18 +47,29 @@ router.post("/api/burgers", function(req, res) {
 
 
 // UPDATE (C. R. U. D.: UPDATE) //
-router.update("/api/burgers", function(req, res) {
+router.put("/api/burgers:id", function(req, res) {
     
-    burger.updateOne(
-        
-         req.body,
-        
-        function(result) {
+    var condition = "id = " + req.params.id;
+  
+    console.log("condition", condition);
+  
+    burger.updateOne({
+     
+        is_favorite: req.body.favorite
+    },
+    
+    condition, function(result) {
       
-            // Send back the ID of the new burger. //
-            res.json({ id: result.updateId });
-        }
-    );
+        if (result.changedRows == 0) {
+        
+            // If no rows were changed, then the ID must not exist, so 404
+            return res.status(404).end();
+            
+      } else {
+        
+        res.status(200).end();
+      }
+    });
 });
 
 
