@@ -4,8 +4,34 @@
     box-sizing: border-box;
 }
 
-h1 {
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #111111;
+}
+
+.container {
+    background-color: #111111;
+    display: flex;
+}
+
+.heading {
+    color: #111111;
     text-align: center;
+    font-size: 7vw;
+    text-shadow: 4px 4px 0px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .BT {
@@ -19,11 +45,10 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
-    width: 500px;
+    padding: 1px;
+    width: 200px;
     align-items: center;
     margin: 0 auto;
-    position: fixed;
     left: 0;
     right: 0;
 }
@@ -33,7 +58,35 @@ form .form-group {
 }
 
 form button {
+    border-radius: 0.5;
     width: 100px;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background-color:transparent;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	border:2px solid orange;
+	display:inline-block;
+	cursor: url('../Media/pointer.png'), auto;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:2px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px red;
+	text-shadow:0px 1px 0px orange;
+}
+
+/* .module {
+    cursor: url('../Media/pointer.png'), auto;	
+  } */
+
+form button:hover {
+	background-color:transparent;
+}
+
+form button:active {
+	position:relative;
+	top:1px;
 }
 
 .BT .BT_content {
@@ -43,14 +96,26 @@ form button {
     margin-top: 10em;
 }
 .BT .getBurger {
+    color: gold;
     display: flex;
     justify-content: space-between;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
     align-items: center;
-    background: #f5b9ac;
+    background-image: url(../Media/100.webp);
     padding: 10px;
     height: 90px;
     border-radius: 4px;
     margin-top: 20px;
+}
+
+.Burgers {
+    font-size: 10vw;
+    text-shadow: 4px 4px 0px #3F7FBF, 1px 4px 0px red;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
 }
 
 .BT .getBurger img {

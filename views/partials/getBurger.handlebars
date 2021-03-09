@@ -3,15 +3,21 @@
     
     <p>{{Burger_name}}</p>
     
-    <button class="btn btn-default favorites" data-id="{{id}}" data-state="{{is_favorite}}">
+    <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>
+    
+    <button class="fav" data-id="{{id}}" data-state="{{is_favorite}}">Da Favs</button>
+    
+    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+
+    {{#each id}}
         {{#if is_favorite}}
-            
-            YUCK!
+        
+            Da Favs
             
             {{else}}
                 
-                Da Favs!
+                YUCK!
                 
         {{/if}}
-    </button>
+    {{/each}} 
 </div>
