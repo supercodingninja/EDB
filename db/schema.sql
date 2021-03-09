@@ -5,7 +5,7 @@ USE EDB_db;
 
 CREATE TABLE BigTimeEst_Burgers (
 	id INT AUTO_INCREMENT NOT NULL,
-    Burger_name VARCHAR(100),
+    Burger_name NOT NULL VARCHAR(100),
     is_favorite BOOLEAN NOT NULL default 0,
     Primary Key(id)
 );
