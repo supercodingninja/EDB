@@ -6,17 +6,18 @@
 
 body {
     font-family: sans-serif;
-    margin: 0;
-    /* background-color: #111111; */
+    background-image: url(../Media/100.webp);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
-.heading {
+.container {
     color: #111111;
     text-align: center;
     font-size: 7vw;
-    text-shadow: 4px 4px 0px #3F7FBF;
-    /* mix-blend-mode: screen; */
-    animation: fadeIn 2.5s linear forwards;
+    text-shadow: 2px 4px 0px orange, 4px 4px 0px #3F7FBF;
+    mix-blend-mode: screen;
+    animation: fadeIn 5s linear forwards;
 }
 
 @keyframes fadeIn {
@@ -29,17 +30,46 @@ body {
     }
 }
 
+h1 {
+    text-align: center;
+    font-size: 85px;
+}
+
 form {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1px;
-    width: 200px;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 5px;
+    width: 400px;
     align-items: center;
     margin: 0 auto;
     left: 0;
     right: 0;
+}
+
+.mkinput {
+    padding: .12rem;
+    border-radius: 1.50rem !important;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+}
+::-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
+
+}
+:-ms-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+}
+:-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
 }
 
 form .form-group {
@@ -47,33 +77,80 @@ form .form-group {
 }
 
 form button {
+    width: 100px;
+}
+
+.turbo {
     border-radius: 0.5;
     width: 100px;
     box-shadow: 0px 0px 0px 2px #9fb4f2;
 	background-color:transparent;
-	border-radius:10px;
+	border-radius:100px;
 	border:1px solid #4e6096;
 	border:2px solid orange;
 	display:inline-block;
-	cursor: url('../Media/pointer.png'), auto;
-	color:#ffffff;
+	cursor:pointer;
+	color:#4e6088;
 	font-family:Arial;
-	font-size:19px;
-	padding:2px 3px;
+	font-size:12px;
+	padding:1px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px red;
 	text-shadow:0px 1px 0px orange;
+	text-shadow:0px 1px 0px #283966;	
 }
 
-/* .module {
-    cursor: url('../Media/pointer.png'), auto;	
-  } */
-
-form button:hover {
-	background-color:transparent;
+.turbo:hover {
+    background-color:black;
+    color: #283966, white,orange;
+    text-shadow:0px 1px 0px orange;
+    font-size: 18px;
 }
 
-form button:active {
+.turbo:active {
 	position:relative;
 	top:1px;
+}
+
+.BT {
+    margin-top: 4em;
+    overflow: auto;
+    height: 1000px;
+}
+
+.BT .BT_content {
+    width: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 10em;
+}
+.BT .getBurger {
+    color: gold;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Media/100.webp);
+    padding: 10px;
+    height: 90px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.Burgers {
+    font-size: 10vw;
+    text-shadow: 4px 4px 0px #3F7FBF, 1px 4px 0px red;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
+}
+
+.BT .getBurger img {
+    height: 70px;
+    border-radius: 4px;
+}
+
+.BT .getBurger p {
+    font-size: 24px;
 }
