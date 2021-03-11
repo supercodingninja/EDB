@@ -4,7 +4,7 @@
     <div class="favs-section">
         <h2>Da Favs</h2>
         {{#each result}}
-            {{#if is_favorite}}
+            {{#if not_devoured}}
                 <div class="Burger" data-id="{{id}}">
 
                     <img src="/Assets/Media/DaFavs.pngDaFavs.png" alt="Give Me Da Burger!">
@@ -22,7 +22,7 @@
         <h2>NASTY Burgers</h2>
         {{#each result}}
         
-            {{#unless is_favorite}}
+            {{#unless not_devoured}}
                 <div class="Burger" data-id="{{id}}">
 
                     <img src="/Assets/Media/NASTY.jpg" alt="YUCK!">

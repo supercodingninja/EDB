@@ -51,7 +51,7 @@ function ratings() {
 
 
 // Ref. views/specifics/getBurger.handlebars //
-const burgerTemplate = (burgerName, id, is_favorite) => {
+const burgerTemplate = (burgerName, id, not_devoured) => {
     
     const burgerContainer = $('<div>').attr({
         
@@ -69,9 +69,9 @@ const burgerTemplate = (burgerName, id, is_favorite) => {
         
         'data-id': id,
         
-        class: 'btn btn-default favorites',
+        class: 'btn btn-default devoured',
         
-        'data-state': is_favorite
+        'data-state': not_devoured
     });
 
     name.html(burgerName);
@@ -100,12 +100,12 @@ const noBurger = (res) => {
 
 
 // User's Burger submission (the submit button). //
-$('#submitBurger').on('submit', function(event) {
-    // alert("click me")
-    //ratings();
+$('#submitBurger').on('submit', function(e) {
+    alert("click me")
+    ratings();
     console.log("submits");
     
-    event.preventDefault(); // Keeps the page from refreshing. //
+    e.preventDefault(); // Keeps the page from refreshing. //
     
     const burgerName = $('#Burger_name').val();
 
@@ -120,7 +120,7 @@ $('#submitBurger').on('submit', function(event) {
             Burger_name: burgerName,
 
 
-            is_favorite: 0
+            not_devoured: 0
         
         }
     })
@@ -134,8 +134,8 @@ $('#submitBurger').on('submit', function(event) {
 });
 
 
-// "DaFavs!" or "Yuck!" //
-const addFav = (Burger) => {
+// "Devoured!" or "Not Devoured" //
+const addToDevoured = (Burger) => {
     
     const id = Burger.id;
     
@@ -152,7 +152,7 @@ const addFail = () => {
 };
 
 
-$(document).on('click', '.favorites', function() {
+$(document).on('click', '.devoured', function() {
     
     const id = $(this).attr('data-id');
     
@@ -175,7 +175,7 @@ $(document).on('click', '.favorites', function() {
     
     })
 
-    .then(addFav)
+    .then(addToDevoured)
     
     .catch(addFail);
 });

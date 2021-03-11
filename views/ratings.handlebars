@@ -1,16 +1,16 @@
 {{ header }}
 
-<div class="DaFavs">
+<div class="ratingsEC">
     
     <h2>"The Good Stuff"</h2>
    
-   <div class="myFavB">
-        {{#each result}}
+   <div class="burgersRating">
+         {{#each result}} {{!-- I still don't know if I should put getBurger, here, instead. --}}
             
             {{ getBurger }}
 
             {{!-- This is suppose to be the Burger's Rating Scale (need help). --}}
-            <div class="col stars-rating" data-burgerID="{{id}}">
+            <div class="rating" data-burgerID="{{id}}">
                 <i class="fa fa-star burger{{id}}" data-rating="1"></i>
                 <i class="fa fa-star burger{{id}}" data-rating="2"></i>
                 <i class="fa fa-star burger{{id}}" data-rating="3"></i>

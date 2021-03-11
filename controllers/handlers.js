@@ -55,7 +55,7 @@ router.put("/api/burgers:id", function(req, res) {
   
     burger.updateOne({
      
-        not_devoured: req.body.favorite
+        not_devoured: req.body.burger
     },
     
     condition, function(result) {
