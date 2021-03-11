@@ -1,25 +1,25 @@
 // IMPORTANT NOTE TO SELF: Go back to COMMITTING IMMEDIATELY after each function: so you do not lose your work, by accidental deletes, computer issues, etc.!  YOU'RE NEW TO THIS; and it's OKAY- who cares if more experience developers do not overly commit- YOU HAVE TO DO WHAT WORKS BEST FOR YOU; SO DO IT, AND DO IT GREAT!!! //
 
 // Ratings //
-// function ratings() {
+function ratings() {
 
-//     $.ajax('/api/burgers', {
+    $.ajax('/api/burgers', {
         
-//         method: 'GET',
-//     })
+        method: 'GET',
+    })
     
-//     .then(function (data) {
+    .then(function (data) {
         
-//         for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             
-//             ratings(data[i].id, data[i].rating);
-//         }
-//     });
-// };
+            ratings(data[i].id, data[i].rating);
+        }
+    });
+};
 
 
 // How do I update my ratings? //
- $('.fa-star').on('click', function (event) {
+ $('.fa-star').on('click', function (e) {
     
     e.preventDefault();
     
@@ -100,9 +100,10 @@ const noBurger = (res) => {
 
 
 // User's Burger submission (the submit button). //
-$('#submitBurger').on('click', function(event) {
+$('#submitBurger').on('submit', function(event) {
     // alert("click me")
     //ratings();
+    console.log("submits");
     
     event.preventDefault(); // Keeps the page from refreshing. //
     
@@ -125,10 +126,8 @@ $('#submitBurger').on('click', function(event) {
     })
     
     .then(
-    function  (){
-    
-             location.reload()
-    
+    () => {
+        location.reload();
     })
     
     .catch(noBurger);

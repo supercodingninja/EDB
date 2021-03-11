@@ -44,7 +44,7 @@ const orm = {
     // updateOne() method. //
     updateOne: function (condition, id, cb) {
     
-        const sqlQuery = `UPDATE BigTimeEst_Burgers SET is_favorite = ${condition} WHERE id = ${id}`;
+        const sqlQuery = `UPDATE BigTimeEst_Burgers SET not_devoured = ${condition} WHERE id = ${id}`;
     
         connection.query(sqlQuery, function (err, data) {
     

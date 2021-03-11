@@ -3,21 +3,43 @@
     
     <p>{{Burger_name}}</p>
     
-    <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>
-    
-    <button class="fav" data-id="{{id}}" data-state="{{is_favorite}}">Da Favs</button>
-    
-    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+    <div>  
+        Devoured
+    </div>
 
-    {{#each id}}
-        {{#if is_favorite}}
+    <div>
+        {{#each burger}}
+            {{#unless devoured}}
+                <div>
+                    {{this.id}}: {{this.burger}}
+                </div>
+
+                <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>  
+            {{/unless}}
+        {{/each}}
+    </div>
+
+    
+
+    <div>
+        Not Devoured 
+    </div>
         
-            Da Favs
+    <div>
+        {{#each id}}
+            {{#if not_devoured}}
+                <div>
+                    {{this.id}}: {{this.burger}}
+                </div>  
+        
+            <button class="fav" data-id="{{id}}" data-state="{{is_favorite}}">Da Favs</button>
             
             {{else}}
                 
-                YUCK!
+                Yuck!
+
+                <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
                 
-        {{/if}}
-    {{/each}} 
-</div>
+            {{/if}}
+        {{/each}}
+    </div>
