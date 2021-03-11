@@ -61,7 +61,7 @@ const burgerTemplate = (burgerName, id, not_devoured) => {
 
     });
 
-    const img = $('<img>').attr('src', '/public/Assets/Media/DaFavs.png');
+    const img = $('<img>').attr('src', '../Media/DaFavs.png');
     
     const name = $('<p>');
     
@@ -147,7 +147,7 @@ const addToDevoured = (Burger) => {
 // What if these buttons do not work? //
 const addFail = () => {
    
-    alert('Fail to add Fav.');
+    alert('Fail to add Devoured.');
 
 };
 
@@ -158,7 +158,7 @@ $(document).on('click', '.devoured', function() {
     
     const value = $(this).attr('data-state');
 
-    let condition = value === '0' ? false : true;
+    // let condition = value === '0' ? false : true; //
 
     $.ajax('/api/burgers', {
         
@@ -181,7 +181,6 @@ $(document).on('click', '.devoured', function() {
 });
 
 
-// Ref. public/Assets/Stylesheets/btb.css; and /Users/supercodingninja/GitHub/EDB/views/BigTimeBurgers.handlebars //
 const removeBurger = (burger) => {
     
     const id = burger.id;

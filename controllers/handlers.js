@@ -72,14 +72,6 @@ router.put("/api/burgers:id", function(req, res) {
     });
 });
 
-// update: function(req, res) {
-    
-//     orm.update("burgers", function(res) {
-      
-//         cb(res);
-//     });
-// };
-
 
 // DELETE (C. R. U. D.: DELETE) //
 router.delete("/api/burgers", function(req, res) {

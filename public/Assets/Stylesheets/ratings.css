@@ -1,16 +1,17 @@
-.DaFavs {
+.ratingsEC {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.myFavB {
+
+.burgersRating {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.myFavB .getBurger {
+.burgersRating .getBurger {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,22 +23,21 @@
     margin: 20px;
 }
 
-.myFavB .getBurger img {
+.burgersRating .getBurger img {
     height: 70px;
     border-radius: 4px;
 }
 
-.myFavB .getBurger p {
+.burgersRating .getBurger p {
     font-size: 24px;
 }
 
-/* Ratings */
-.fa-star {
+.rating {
     color: rgb(228, 216, 216);
     border: none;
     padding: none;
 }
 
-.fa-star:hover {
+.rating:hover {
     color: gold;
 }
