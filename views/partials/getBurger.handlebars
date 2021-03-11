@@ -1,45 +1,46 @@
 <div class="getBurger" id={{id}}>
-    <img src="/Assets/Media/DaFavs.png" alt="">
-    
-    <p>{{Burger_name}}</p>
-    
-    <div>  
-        Devoured
-    </div>
+    {{!-- <img src="/Assets/Media/DaFavs.png" alt=""> --}}
 
-    <div>
-        {{#each burger}}
-            {{#unless devoured}}
-                <div>
-                    {{this.id}}: {{this.burger}}
-                </div>
-
-                <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>  
-            {{/unless}}
-        {{/each}}
-    </div>
-
-    
-
-    <div>
-        Not Devoured 
-    </div>
+    <section class="burgerMenu">
+        <div>
+            <h2 align="center">Burger Menu</h2> 
+        </div>
         
-    <div>
-        {{#each id}}
-            {{#if not_devoured}}
-                <div>
-                    {{this.id}}: {{this.burger}}
-                </div>  
-        
-            <button class="fav" data-id="{{id}}" data-state="{{not_devoured}}">Not Devoured</button>
+        <div>
+            {{#each id}}
+                {{#if not_devoured}}
+                    <div>
+                        {{this.id}}
+                    </div>  
             
-            {{else}}
-                
-                Yuck!
+                    <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>  
 
-                <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
-                
-            {{/if}}
-        {{/each}}
-    </div>
+                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                    
+                {{/if}}
+            {{/each}}
+        </div>
+    </section>
+
+    
+    <section class="Devoured">
+        <div>  
+            <h2 align="center">Devoured</h2>
+        </div>
+        
+
+        <div>
+            {{#each id}}
+                {{#unless devoured}}
+                    <div>
+                        {{this.id}}
+                    </div>
+
+                    <button class="remake" data-id="{{id}}" data-state="{{not_devoured}}">Make again</button>
+
+                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                {{/unless}}
+            {{/each}}
+        </div>
+    </section>
+</div>
