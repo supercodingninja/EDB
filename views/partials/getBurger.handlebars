@@ -7,18 +7,20 @@
         </div>
         
         <div>
-            {{#each id}}
-                {{#if not_devoured}}
-                    <div>
-                        {{this.id}}
-                    </div>  
-            
-                    <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>  
+            <ul>
+                {{#each id}}
+                    {{#if not_devoured}}
+                        <div>
+                            {{this.id}}
+                        </div>  
+                
+                        <button class="devour" data-id="{{id}}" data-state="{{Devour}}">Devour</button>  
 
-                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
-                    
-                {{/if}}
-            {{/each}}
+                        <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                        
+                    {{/if}}
+                {{/each}}
+            </ul>
         </div>
     </section>
 
@@ -30,17 +32,19 @@
         
 
         <div>
-            {{#each id}}
-                {{#unless devoured}}
-                    <div>
-                        {{this.id}}
-                    </div>
+            <ul>
+                {{#each id}}
+                    {{#unless devoured}}
+                        <div>
+                            {{this.id}}
+                        </div>
 
-                    <button class="remake" data-id="{{id}}" data-state="{{not_devoured}}">Make again</button>
+                        <button class="remake" data-id="{{id}}" data-state="{{not_devoured}}">Make again</button>
 
-                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
-                {{/unless}}
-            {{/each}}
+                        <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                    {{/unless}}
+                {{/each}}
+            </ul>
         </div>
     </section>
 </div>
