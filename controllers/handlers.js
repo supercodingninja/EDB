@@ -37,17 +37,17 @@ router.post("/api/burgers", function(req, res) {
         
          req.body,
         
-        function(result) {
-      
+        function(results) {
+          console.log("result ",results)
             // Send back the ID of the new burger. //
-            res.json({ id: result.insertId });
+            res.json(results);
         }
     );
 });
 
 
 // UPDATE (C. R. U. D.: UPDATE) //
-router.put("/api/burgers:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
     
     var condition = "id = " + req.params.id;
   
@@ -55,7 +55,7 @@ router.put("/api/burgers:id", function(req, res) {
   
     burger.updateOne({
      
-        not_devoured: req.body.burger
+        devoured: req.body.devoured
     },
     
     condition, function(result) {

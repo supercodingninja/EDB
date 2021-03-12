@@ -5,13 +5,13 @@
     </div>
 
     <div class="menu-section">
-        {{#each result}}
-            {{#if not_devoured}}
+        {{#each burgers}}
+            {{#if devoured}}
                 <div class="Burger" data-id="{{id}}">
 
-                    <p>{{Burger_name}}</p>
+                    <p>{{burger_name}}</p>
 
-                    <button class="devour" data-id="{{id}}" data-state="{{is_devoured}}">Devour</button>
+                    <button class="devoured" data-id="{{id}}" data-state="{{devoured}}">Devour</button>
                     
                     <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
                 </div>
@@ -19,20 +19,20 @@
         {{/each}}
     </div>
 
-
+<hr>
     {{!-- This is my Devoured section, which should appear on the right side of my page.  Buttons are included to populate with each burger: in order to give the user the oprion to "delete" the burger; or the user can choose to  remake it. --}}
     <div class="flex-child devoured">
     Devoured
     </div>
 
     <div class="devoured-section">
-        {{#each result}}
-            {{#unless not_devoured}}
+        {{#each burgers}}
+            {{#unless devoured}}
                 <div class="Burger" data-id="{{id}}">
                     
-                    <p>{{Burger_name}}</p>
+                    <p>{{burger_name}}</p>
 
-                    <button class="notDevoured" data-id="{{id}}" data-state="{{not_devoured}}">Return To Menu</button>
+                    <button class="notDevoured" data-id="{{id}}" data-state="{{devoured}}">Return To Menu</button>
                     
                     <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
                 </div>

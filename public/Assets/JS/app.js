@@ -102,35 +102,42 @@ const noBurger = (res) => {
 // User's Burger submission (the submit button). //
 $('#submitBurger').on('submit', function(e) {
     alert("click me")
-    ratings();
+  //  ratings();
     console.log("submits");
     
     e.preventDefault(); // Keeps the page from refreshing. //
     
     const burgerName = $('#Burger_name').val();
 
-    $.ajax({
-        
-        url: '/api/burgers',
-        
-        method: 'POST',
-        
-        data: {
+
+    const data = {
             
-            Burger_name: burgerName,
+        burger_name: burgerName,
 
 
-            not_devoured: 0
-        
-        }
-    })
+        devoured: 0
     
-    .then(
-    () => {
+    };
+
+    fetch('/api/burgers', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
         location.reload();
+      console.log('Success:', data);
     })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+
     
-    .catch(noBurger);
+     
 });
 
 
@@ -157,10 +164,14 @@ $(document).on('click', '.devoured', function() {
     const id = $(this).attr('data-id');
     
     const value = $(this).attr('data-state');
+     
+    const burgerData = {
+        devoured:1
+    }
 
     // let condition = value === '0' ? false : true; //
 
-    $.ajax('/api/burgers', {
+    $.ajax('/api/burgers/' + id, {
         
         method: 'PUT',
         

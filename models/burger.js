@@ -1,5 +1,5 @@
 // Don't forget to require the ORM. //
-const { deleteOne } = require('../config/orm');
+ 
 
 const orm = require('../config/orm.js');
 
@@ -17,8 +17,8 @@ let anyBurger = {
     // This is how to get user's burger into a burger table.  Ref. https://docs.mongodb.com/drivers/node/usage-examples/insertOne/ "insertOne() returns nothing. If you not specify one, this method returns a Promise that resolves to the result object when it completes." //
     insertOne: function (body, cb) {
         
-        orm.insertOne ('BigTimeEst_Burgers', body,  function (res) {
-            
+        orm.insertOne('BigTimeEst_Burgers', body,  function (res) {
+            console.log(res,"----------------")
             cb(res);
 
         });

@@ -33,7 +33,7 @@ const orm = {
   
     const statement=    connection.query(sqlQuery,[table, body], function (err, data) {
     
-            if (err) throw err,
+            if (err) throw err
     
             cb(data);
         });
@@ -44,7 +44,7 @@ const orm = {
     // updateOne() method. //
     updateOne: function (condition, id, cb) {
     
-        const sqlQuery = `UPDATE BigTimeEst_Burgers SET not_devoured = ${condition} WHERE id = ${id}`;
+        const sqlQuery = `UPDATE BigTimeEst_Burgers SET devoured = ${condition} WHERE id = ${id}`;
     
         connection.query(sqlQuery, function (err, data) {
     
@@ -61,9 +61,9 @@ const orm = {
     
         connection.query(sqlQuery, function (err, data) {
     
-            if (err) cb(err, null);
+           
     
-            cb(null, data)
+            cb(  data)
         });
     }
 };
