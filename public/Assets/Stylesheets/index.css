@@ -17,7 +17,7 @@ body {
     font-size: 7vw;
     text-shadow: 2px 4px 0px orange, 4px 4px 0px #3F7FBF;
     mix-blend-mode: screen;
-    animation: fadeIn 5s linear forwards;
+    animation: fadeIn 2.5s linear forwards;
 }
 
 @keyframes fadeIn {
@@ -109,48 +109,4 @@ form button {
 .turbo:active {
 	position:relative;
 	top:1px;
-}
-
-.BT {
-    margin-top: 4em;
-    overflow: auto;
-    height: 1000px;
-}
-
-.BT .BT_content {
-    width: 500px;
-    margin: 0 auto;
-    overflow: auto;
-    margin-top: 10em;
-}
-.BT .getBurger {
-    color: gold;
-    display: flex;
-    /* justify-content: space-between; */
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Media/100.webp);
-    padding: 10px;
-    height: 90px;
-    border-radius: 4px;
-    margin-top: 20px;
-}
-
-.Burgers {
-    font-size: 10vw;
-    text-shadow: 4px 4px 0px #3F7FBF, 1px 4px 0px red;
-    mix-blend-mode: screen;
-    animation: fadeIn 2.5s linear forwards;
-}
-
-.BT .getBurger img {
-    height: 70px;
-    border-radius: 4px;
-}
-
-.BT .getBurger p {
-    font-size: 24px;
 }

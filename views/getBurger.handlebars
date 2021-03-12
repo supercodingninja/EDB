@@ -1,0 +1,40 @@
+<div class="flex-container">
+    <div class="flex-child menu">
+    Menu Requested
+    </div>
+
+    <div class="menu-section">
+        {{#each result}}
+            {{#if not_devoured}}
+                <div class="Burger" data-id="{{id}}">
+
+                    <p>{{Burger_name}}</p>
+
+                    <button class="devour" data-id="{{id}}" data-state="{{is_devoured}}">Devour</button>
+                    
+                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+
+    <div class="flex-child devoured">
+    Devoured
+    </div>
+
+    <div class="devoured-section">
+        {{#each result}}
+            {{#unless not_devoured}}
+                <div class="Burger" data-id="{{id}}">
+                    
+                    <p>{{Burger_name}}</p>
+
+                    <button class="notDevoured" data-id="{{id}}" data-state="{{not_devoured}}">Return To Menu</button>
+                    
+                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                </div>
+            {{/unless}}
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,105 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.devour-section {
+    margin-bottom: 5em;
+    width: 500px;
+}
+
+.menu-section {
+    width: 500px;
+}
+
+.menu .Burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dada9c;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.Burger p {
+    font-size: 24px;
+}
+
+.notDevoured {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background-color:transparent;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	border:2px solid orange;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:2px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px red;
+	text-shadow:0px 1px 0px orange;
+}
+
+.notDevoured:hover {
+	background-color:transparent;
+}
+
+.notDevoured:active {
+	position:relative;
+	top:1px;
+}
+
+.devour {box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background-color:transparent;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	border:3px solid orange;
+	border:2px solid red;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:2px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px red;
+	text-shadow:0px 1px 0px orange;
+}
+
+.devour:hover {
+	background-color:transparent;
+}
+
+.devour:active {
+	position:relative;
+	top:1px;
+}
+
+.yuck {
+    box-shadow: 0px 0px 0px 2px darkgreen;
+	background-color:black (opacity 5%);
+	border-radius:10px;
+	border:2px solid darkolivegreen;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Arial;
+	font-size:19px;
+	padding:2px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px green;
+	text-shadow:0px 1px 0px greenyellow;
+}
+
+.yuck:hover {
+	background-color:transparent;
+}
+
+.yuck:active {
+	position:relative;
+	top:1px;
+}
