@@ -6,16 +6,16 @@
 
     <div class="menu-section">
         {{#each burgers}}
-            {{#if devoured}}
+            {{#unless devoured}}
                 <div class="Burger" data-id="{{id}}">
 
                     <p>{{burger_name}}</p>
 
                     <button class="devoured" data-id="{{id}}" data-state="{{devoured}}">Devour</button>
                     
-                    <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
+                  
                 </div>
-            {{/if}}
+            {{/unless}}
         {{/each}}
     </div>
 
@@ -27,7 +27,7 @@
 
     <div class="devoured-section">
         {{#each burgers}}
-            {{#unless devoured}}
+            {{#if devoured}}
                 <div class="Burger" data-id="{{id}}">
                     
                     <p>{{burger_name}}</p>
@@ -36,7 +36,7 @@
                     
                     <button class="yuck" data-id="{{id}}" data-state="{{delete}}">Delete</button>
                 </div>
-            {{/unless}}
+            {{/if}}
         {{/each}}
     </div>
 </div>

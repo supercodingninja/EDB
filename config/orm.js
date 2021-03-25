@@ -42,15 +42,15 @@ const orm = {
     },
     
     // updateOne() method. //
-    updateOne: function (condition, id, cb) {
+    updateOne: function (table, body, condition, cbModel) {
     
-        const sqlQuery = `UPDATE BigTimeEst_Burgers SET devoured = ${condition} WHERE id = ${id}`;
+        const sqlQuery = `UPDATE ?? SET  ? WHERE ${condition} `;
     
-        connection.query(sqlQuery, function (err, data) {
+        connection.query(sqlQuery,[table, body], function (err, data) {
     
             if (err) cb(err, null);
     
-            cb(null, data)
+            cbModel(null, data)
         });
     },
     
